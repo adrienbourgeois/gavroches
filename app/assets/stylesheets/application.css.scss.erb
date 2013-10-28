@@ -15,12 +15,17 @@
 
 @import 'bootstrap';
 
+#vertical-centering {
+  vertical-align: middle;
+  margin: auto;
+}
+
 footer {
   text-align: right;
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 1200%;
   text-align: center;
 }
 
@@ -29,10 +34,10 @@ h1 {
 }
 
 .container {
-  padding-top: 60px;
-  padding-bottom:60px;
-  padding-right:20px;
-  padding-left:20px;
+  padding-top: 0px;
+  padding-bottom:0px;
+  padding-right:5px;
+  padding-left:5px;
 }
 
 body {
@@ -47,7 +52,7 @@ body {
 }
 
 #home_tab {
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.5);
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 5px;
@@ -58,32 +63,37 @@ body {
 }
 
 #invert {
-  color: rgb(255,255,255);
+  color: rgba(255,255,255,0.7);
 }
 
 #invert_soft {
-  color: rgb(124,124,124);
+  color: rgba(160,160,160,0.8);
 }
 
 .logo {
   margin: auto;
   display: block;
-  height: 120px;
-  width: 120px;
+  height: 60px;
+  width: 60px;
 }
 
 .soundcloud {
-  background: url(<%= image_path 'soundcloud-6-120.ico' %>);
+  background: url(<%= image_path 'soundcloud-6-60.ico' %>);
   &:hover {
-    background: url(<%= image_path 'soundcloud-6-120_h.ico' %>);
+    background: url(<%= image_path 'soundcloud-6-60_h.ico' %>);
   }
 }
 
 .facebook {
-  background: url(<%= image_path 'facebook-3-120.ico' %>);
+  background: url(<%= image_path 'facebook-3-60.ico' %>);
   color: rgb(0,0,0);
   &:hover {
-    background: url(<%= image_path 'facebook-3-120_h.ico' %>);
+    background: url(<%= image_path 'facebook-3-60_h.ico' %>);
   }
+}
+
+#authors {
+  color: rgb(255,255,255);
+  background-color: rgba(0,0,0,0.6);
 }
 
